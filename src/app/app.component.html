@@ -1,0 +1,9 @@
+<nav>
+  <h1>Password Encoder</h1>
+</nav>
+<form [formGroup]="myForm" (ngSubmit)="encode()">
+  <input type="text" placeholder="Password" formControlName="password" />
+  <br>
+  <button type="submit">Encode</button>
+</form>
+<h1 id="out">{{ out }}</h1>
